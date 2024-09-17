@@ -56,18 +56,36 @@ public class patterns {
     //     }
     // }
     // 9. Triangle pattern(0-1)
-          public static void traingle(int n){
-            for (int i=1;i<=n;i++){
+          // public static void traingle(int n){
+          //   for (int i=1;i<=n;i++){
+          //     for(int j=1;j<=i;j++){
+          //       if((i+j)%2==0){
+          //         System.out.print("1");
+          //       }else{
+          //         System.out.print("0");
+          //       }
+          //     }
+          //     System.out.println();
+          //   }
+          // }
+
+        // 10. butterfly pattern
+         
+        public static void butterfly(int n) {
+            for (int i=1;i<=n; i++) {
               for(int j=1;j<=i;j++){
-                if((i+j)%2==0){
-                  System.out.print("1");
-                }else{
-                  System.out.print("0");
-                }
+                System.out.print("*");
               }
-              System.out.println();
+              for(int j=1;j<=(n-i)*2;j++){
+                System.out.print(" ");
+              }
+              for(int j=1;j<=i;j++){
+                System.out.print("*");
+              }
+              System.out.println("");
             }
-          }
+        }
+      
     public static void main(String[] args) {
         /*1.
            *
@@ -162,6 +180,15 @@ public class patterns {
          1 0 1
          0 1 0 1
          */
-        traingle(4);
+        // traingle(4);
+
+        /*10. butterfly pattern
+         *      *
+         **    **
+         ***  ***
+         ********
+         */
+
+         butterfly(4);
     }
 }
