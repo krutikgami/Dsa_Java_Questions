@@ -14,6 +14,6 @@ public class Binary_String {
         }
     }
     public static void main(String[] args) {
-        binaryString(3, 0, "");
+        binaryString(1, 0, "");
     }
 }
