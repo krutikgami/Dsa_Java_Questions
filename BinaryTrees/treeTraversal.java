@@ -65,7 +65,7 @@ public class treeTraversal {
             while (!q.isEmpty()) {
                 Node currNode = q.remove();
                 if (currNode == null) {
-                    System.out.println();
+                    // System.out.println();
                     if (q.isEmpty()) {
                         break;
                     }else{
@@ -141,18 +141,21 @@ public class treeTraversal {
     //     System.out.println();
     //     tree.postOrder(root);
     //     System.out.println();
-    //     tree.levelOrder(root);
-    Node node = new Node(1);
-    node.left = new Node(2);
-    node.right = new Node(3);
-    node.left.left = new Node(4);
-    node.left.right = new Node(5);
-    node.right.right = new Node(3);
-    node.right.right.right = new Node(6);
+     
+    Node node = new Node(5);
+        node.left = new Node(8);
+        node.right = new Node(9);
+        node.left.left = new Node(2);
+        node.left.right = new Node(1);
+        node.left.left.left = new Node(4);
+        node.left.left.right = new Node(6);
+        node.right.left = new Node(3);
+        node.right.right = new Node(7);
+    tree.levelOrder(node);
 
     // System.out.println(tree.heightTree(node));
     // System.out.println(tree.countNode(node));
     // System.out.println(tree.sumNode(node));
-    System.out.println(tree.diamTree(node));
+    // System.out.println(tree.diamTree(node));
     }
 }
